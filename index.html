@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Decodificador</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="grid-container">
+            <section class="area1">
+                <header>
+                    <nav class="nav">
+                        <img src="./assets/Logo.svg" width="120px" height="48px" alt="Logo">
+                    </nav>
+                </header>
+                <div class="text-box ">
+
+                    <textarea name="text-area" id="input" rows="12" cols="40"
+                        placeholder="Ingrese texto aqui"></textarea>
+                </div>
+                <div class="warning ">
+                    <img src="./assets/warning.svg" alt="warning" class="" style="padding-right: 10px;">Solo letras
+                    minúsculas y sin acentos
+                    </img>
+                </div>
+                <div class="btns">
+                    <button type="submit" onclick="inputProcessing()"
+                        class="btn-1">&nbsp;&nbsp;Encriptar&nbsp;&nbsp;&nbsp;&nbsp;
+                    </button>
+                    <button type="submit" onclick="decrypt()" class="btn-2">Desencriptar</button>
+
+                </div>
+            </section>
+            <section class="area2  ">
+
+                <div id="result" class="bg-rectangle">
+
+                    <img src="./assets/Muñeco.svg" width="336px" height="304px" alt="toy"
+                        style="width: 65%; height: auto;  margin: 40% 0 0 15%; ">
+                    <div class="text-container">
+                        <h1>Ningún mensaje fue encontrado</h1>
+                        <br>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        <br>
+                    </div>
+
+                </div>
+
+        </div>
+
+
+        </section>
+        </div>
+    </main>
+
+</body>
+
+</html>

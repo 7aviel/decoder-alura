@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --dark-blue-400:#052051;
+    --dark-blue2-400:#072B61;
+    --dark-blue-300: #0A3871;
+    --dark-blue-200: #356EA9;
+    --dark-blue-100: #609ed4; 
+
+    --light-blue-500: #757bf2;
+    --light-blue-400: #AAB2D5;
+    --light-blue-200:#EFF1FA;
+    --light-blue-100: #F3F5FC;
+
+    --gray-500: #343A40;
+    --gray-400: #495057;
+    --gray2-500: #868E96;
+    --gray-200: #ADB5BD;
+    --gray-100:#CED4DA;
+    
+    --main-font: "Inter", sans-serif;
+    --font-xs: 0.5rem;
+    --font-sm: 0.8rem;
+    --font-md: 1rem;
+    --font-lg: 1.8rem;
+    --font-xl: 2rem;
+    --font-xxl: 3rem;
+
+    --space-xxs: 1%;
+    --space-xs: 3%;
+    --space-sm: 5%;
+    --space-md: 15%;
+    --space-lg: 20%;
+    --space-xl: 25%;
+    --space-xxl: 30%;
+    --space-xxll: 35%;
+    --space-xxxl: 40%;
+
+    --btn-radius: 18px;
+}
+
+/*******************************************************************
+  RESET SECTION:
+*******************************************************************/
+html {
+    box-sizing: border-box;
+  }
+  
+  /* This disables the box sizing defaults*/
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-family: var(--main-font);
+    margin: auto;
+    font-size: var(--font-md);
+    background-color: var(--light-blue-100);
+
+}
+
+
+
+input,label,button,textarea,select{
+    font-family: inherit;
+    resize:none;
+    border: none;
+    
+}
+
+textarea::placeholder{
+    font-size: var(--font-lg);
+    color: var(--dark-blue-300);
+}
+
+textarea{
+    display: inherit;
+    color: var(--dark-blue-300);
+    font-size: var(--font-lg);
+    background-color: var(--light-blue-100);
+    margin: var(--space-xs) 0 0 var(--space-md);
+}
+h1{
+    margin: 0;
+  
+}
+p{
+    margin: 0;
+ 
+}
+
+
+/*Utility classes*/
+
+
+.grid-container{
+   /* border:solid;*/
+    border-color: red;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-template-rows: repeat(auto-fit,minmax(70px,1fr));
+}
+
+
+.area1{
+    display: inherit;
+    grid-column: span 8 ;
+}
+
+.area2{
+    display: inherit;
+    grid-column: span 4;
+ 
+}
+.nav{
+    display: flex;
+    padding-inline: 1rem;
+    padding: var(--space-xs) 0 var(--space-xs) var(--space-sm);
+}
+/*Component CSS*/
+/*AREA 1*/
+.text-box{
+    display: inherit;
+   /* border:solid;*/
+     border-color: green; 
+ 
+  
+}
+.warning{
+    /*
+   display: flex;
+   justify-content: start;
+  /*  border:solid;*/
+     border-color: orange; 
+     padding-left: var(--space-md);
+     padding-top: var(--space-xxs);
+     
+}
+.btns{
+   /* border:solid;*/
+     border-color: orange; 
+     margin: var(--space-xxs) var(--space-md) var(--space-xxs) var(--space-md);
+    display: inherit;
+    gap: 2rem;
+   /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;*/
+}
+
+.btn-1{
+    border: 2px solid;
+    border-color: var(--dark-blue-300);
+    border-radius: var(--btn-radius);
+    font-size: var(--font-md);
+    background-color: var(--dark-blue-300);
+    color: var(--light-blue-100);
+    padding: var(--space-xs) var(--space-md) var(--space-xs) var(--space-md);
+    margin-bottom: var(--space-xs);
+    grid-area: 1 / 1 / span 3 / span 2;
+
+}
+
+.btn-1:hover{
+    background-color: #D8DFE8;
+    color: var(--dark-blue-300);
+    
+}
+
+.btn-2{
+    border: 2px solid;
+    border-color: var(--dark-blue-300);
+    border-radius: var(--btn-radius);
+    font-size: var(--font-md);
+    background-color: #D8DFE8;
+    color: var(--dark-blue-300);
+    padding: var(--space-xs) var(--space-md) var(--space-xs) var(--space-md);
+    margin-bottom: var(--space-xs);
+    grid-area: 1 / 3 / span 3 / span 2;
+}
+
+.btn-2:hover{
+    background-color: var(--dark-blue-300);
+    color: #D8DFE8;
+}
+
+
+/* AREA 2*/
+.text-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border:solid;*/
+     border-color: blue;   
+     margin-top: var(--space-xs);
+    text-align: center;
+    margin: 0 var(--space-md) 0 var(--space-md);
+   
+}
+
+.bg-rectangle{
+    display: inherit;
+    margin: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
+    background-color: white;
+    border-radius: 32px;
+ 
+}
+/*
+.card-toy{
+    background-image: url("./assets/Rectangle.svg");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    /*border:solid;
+    border-color: blue;  
+    background-size: contain;
+    
+  
+}*/
+
+.result{
+    display: grid;
+    grid-template-rows: auto auto; /* Dos filas: una para el texto y otra para el botón */
+    grid-template-columns: 1fr; /* Una columna que ocupa todo el ancho */
+    gap: 10px; /* Espacio entre filas */
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin: 10% 5%;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin: 10% 5% 10% 5%;
+}
+
+.p-result{
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    grid-area: 1 / 1 / span 12 / 2;
+}
+
+.btn-3{
+    border: 2px solid;
+    margin: 72% 0 0 0;
+    border-color: var(--dark-blue-300);
+    border-radius: var(--btn-radius);
+    font-size: var(--font-md);
+    background-color: #D8DFE8;
+    color: var(--dark-blue-300);
+    padding: var(--space-xs) var(--space-md) var(--space-xs) var(--space-md);
+    grid-area: 12 / 1 / span 1 / 2; /* Ubica el botón en la segunda fila */
+    min-width: 46px;
+}
+
+.btn-3:hover{
+    background-color: var(--dark-blue-300);
+    color: #D8DFE8;
+}
+
+
+@media only screen and (min-width: 60px){
+    .area2{
+    grid-column: span 8;
+    }
+    .btns{
+        margin-top: var(--space-sm);
+        margin-bottom: var(--space-sm);
+    }
+    .btn-2{
+        grid-area: 3 / 1 / span 3 / span 2;
+    }
+
+  }
+
+  @media only screen and (min-width: 426px){
+    .btn-2{
+        grid-area: 1 / 3 / span 3 / span 2;
+    }
+  }
+
+@media only screen and (min-width: 1024px ) {
+    .area2{
+        grid-column: span 4;
+    }
+    
+
+}
+
+  
+  
+   
